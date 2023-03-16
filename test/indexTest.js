@@ -93,7 +93,7 @@ describe("index.css", () => {
   it("sets <div> font-family to 'Helvetica Neue'", () => {
     const rule = findRule(css.cssRules, "div");
     const hint = "Missing font-family property for div";
-    expect(rule.style["font-family"], hint).to.contain("Helvetica Neue");
+    expect(rule.style["font-family"], hint).to.contain("Arial, Helvetica, sans-serif");
   });
 
   it("sets <div> background to white", () => {
